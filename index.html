@@ -54,7 +54,7 @@
          var myNewData = [];
          for(var i = 0; i < newData.length; i++) {
                 var date = new Date(newData[i].datestamp);
-                var depth = parseInt(newData[i].depth);
+                var depth = parseInt(100 - newData[i].depth);
                 myNewData.push([new Date(date), depth]);
          }
          console.log("NewDATA is " + JSON.stringify(myNewData));
@@ -72,6 +72,7 @@
            title: 'Distance from top of tank to water',
            width: 'auto',
            height: '60%',
+           curveType: "function",
            hAxis: {
              format: 'hh:mm (dd MMM yy)',
              gridlines: {count: 15}
@@ -82,11 +83,11 @@
            }
          };
 
-         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+         var chart = new google.visualization.AreaChart(document.getElementById('curve_chart'));
 
          chart.draw(data, options);
 
-         window.setInterval(myTimer, 5000);
+         window.setTimeout(myTimer, 5000);
        }
 
        function myTimer() {
