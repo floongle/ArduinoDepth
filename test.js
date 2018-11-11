@@ -164,8 +164,8 @@ function returnResults(response) {
 
 function writeDepthToDatabase(depthInCM) {
 
-  if (depthInCM > 120) {
-    logger.log('info', "Depth in CM is greater than 120cm. Not storing");
+  if (depthInCM > 99) {
+    logger.log('info', "Depth in CM is greater than 99cm. Not storing");
     return;
   }
 
