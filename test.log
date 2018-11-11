@@ -1104,3 +1104,106 @@
 2018-11-10T18:55:47.488Z info: About to store a depth of [15]
 2018-11-10T18:55:47.501Z info: 1 document inserted into database.
 2018-11-11T15:19:11.809Z info: ******************** Starting up.
+2018-11-11T16:44:28.530Z info: About to store a depth of [2226]
+2018-11-11T16:44:28.574Z info: 1 document inserted into database.
+2018-11-11T16:44:38.685Z info: About to store a depth of [2219]
+2018-11-11T16:44:38.703Z info: 1 document inserted into database.
+2018-11-11T16:44:48.835Z info: About to store a depth of [2219]
+2018-11-11T16:44:48.860Z info: 1 document inserted into database.
+2018-11-11T16:44:58.991Z info: About to store a depth of [2218]
+2018-11-11T16:44:59.007Z info: 1 document inserted into database.
+2018-11-11T16:45:09.143Z info: About to store a depth of [2211]
+2018-11-11T16:45:09.159Z info: 1 document inserted into database.
+2018-11-11T16:45:19.294Z info: About to store a depth of [2214]
+2018-11-11T16:45:19.310Z info: 1 document inserted into database.
+2018-11-11T16:45:29.448Z info: About to store a depth of [2216]
+2018-11-11T16:45:29.457Z info: 1 document inserted into database.
+2018-11-11T16:45:39.595Z info: About to store a depth of [2205]
+2018-11-11T16:45:39.611Z info: 1 document inserted into database.
+2018-11-11T16:45:49.744Z info: About to store a depth of [2207]
+2018-11-11T16:45:49.760Z info: 1 document inserted into database.
+2018-11-11T16:45:59.807Z info: About to store a depth of [666]
+2018-11-11T16:45:59.822Z info: 1 document inserted into database.
+2018-11-11T16:46:09.835Z info: About to store a depth of [65]
+2018-11-11T16:46:09.850Z info: 1 document inserted into database.
+2018-11-11T16:46:19.868Z info: About to store a depth of [57]
+2018-11-11T16:46:19.883Z info: 1 document inserted into database.
+2018-11-11T16:46:30.026Z info: About to store a depth of [2213]
+2018-11-11T16:46:30.041Z info: 1 document inserted into database.
+2018-11-11T16:46:40.175Z info: About to store a depth of [2204]
+2018-11-11T16:46:40.190Z info: 1 document inserted into database.
+2018-11-11T16:46:50.323Z info: About to store a depth of [2207]
+2018-11-11T16:46:50.360Z info: 1 document inserted into database.
+2018-11-11T16:47:00.493Z info: About to store a depth of [2211]
+2018-11-11T16:47:00.508Z info: 1 document inserted into database.
+2018-11-11T16:47:10.650Z info: About to store a depth of [2215]
+2018-11-11T16:47:10.664Z info: 1 document inserted into database.
+2018-11-11T16:47:20.672Z info: About to store a depth of [41]
+2018-11-11T16:47:20.686Z info: 1 document inserted into database.
+2018-11-11T16:47:30.747Z info: About to store a depth of [890]
+2018-11-11T16:47:30.761Z info: 1 document inserted into database.
+2018-11-11T16:47:40.773Z info: About to store a depth of [42]
+2018-11-11T16:47:40.787Z info: 1 document inserted into database.
+2018-11-11T16:47:50.794Z info: About to store a depth of [59]
+2018-11-11T16:47:50.807Z info: 1 document inserted into database.
+2018-11-11T16:48:00.942Z info: About to store a depth of [2207]
+2018-11-11T16:48:00.959Z info: 1 document inserted into database.
+2018-11-11T16:48:11.088Z info: About to store a depth of [2216]
+2018-11-11T16:48:11.103Z info: 1 document inserted into database.
+2018-11-11T16:48:21.149Z info: About to store a depth of [681]
+2018-11-11T16:48:21.168Z info: 1 document inserted into database.
+2018-11-11T16:48:31.297Z info: About to store a depth of [2214]
+2018-11-11T16:48:31.311Z info: 1 document inserted into database.
+2018-11-11T16:48:41.446Z info: About to store a depth of [2205]
+2018-11-11T16:48:41.459Z info: 1 document inserted into database.
+2018-11-11T16:48:51.551Z info: About to store a depth of [1315]
+2018-11-11T16:48:51.566Z info: 1 document inserted into database.
+2018-11-11T16:49:01.700Z info: About to store a depth of [2215]
+2018-11-11T16:49:01.714Z info: 1 document inserted into database.
+2018-11-11T16:49:11.783Z info: About to store a depth of [1110]
+2018-11-11T16:49:11.797Z info: 1 document inserted into database.
+2018-11-11T16:49:21.805Z info: About to store a depth of [63]
+2018-11-11T16:49:21.818Z info: 1 document inserted into database.
+2018-11-11T16:49:31.951Z info: About to store a depth of [2211]
+2018-11-11T16:49:31.965Z info: 1 document inserted into database.
+2018-11-11T16:49:42.100Z info: About to store a depth of [2216]
+2018-11-11T16:49:42.119Z info: 1 document inserted into database.
+2018-11-11T16:49:52.249Z info: About to store a depth of [2215]
+2018-11-11T16:49:52.263Z info: 1 document inserted into database.
+2018-11-11T16:50:02.398Z info: About to store a depth of [2216]
+2018-11-11T16:50:02.406Z info: 1 document inserted into database.
+2018-11-11T16:50:05.553Z info: ******************** Starting up.
+2018-11-11T16:50:12.582Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:50:22.617Z info: About to store a depth of [15]
+2018-11-11T16:50:22.731Z info: 1 document inserted into database.
+2018-11-11T16:50:32.679Z info: About to store a depth of [7]
+2018-11-11T16:50:32.710Z info: 1 document inserted into database.
+2018-11-11T16:50:42.712Z info: About to store a depth of [15]
+2018-11-11T16:50:42.729Z info: 1 document inserted into database.
+2018-11-11T16:50:52.868Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:51:03.021Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:51:13.052Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:51:23.096Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:51:33.119Z info: About to store a depth of [59]
+2018-11-11T16:51:33.135Z info: 1 document inserted into database.
+2018-11-11T16:51:43.145Z info: About to store a depth of [61]
+2018-11-11T16:51:43.155Z info: 1 document inserted into database.
+2018-11-11T16:51:53.291Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:52:03.437Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:52:13.580Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:52:23.677Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:52:33.789Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:52:43.937Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:52:54.081Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:53:04.225Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:53:14.368Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:53:24.388Z info: About to store a depth of [60]
+2018-11-11T16:53:24.404Z info: 1 document inserted into database.
+2018-11-11T16:53:34.537Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:53:44.681Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:53:54.825Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:54:04.968Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:54:15.116Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:54:25.262Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:54:35.406Z info: Depth in CM is greater than 120cm. Not storing
+2018-11-11T16:54:45.549Z info: Depth in CM is greater than 120cm. Not storing

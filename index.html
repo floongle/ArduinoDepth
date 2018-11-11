@@ -69,15 +69,15 @@
          data.addRows(myNewData);
 
          var options = {
-           title: 'Rate the Day on a Scale of 1 to 10',
-           width: 900,
-           height: 500,
+           title: 'Distance from top of tank to water',
+           width: 'auto',
+           height: '60%',
            hAxis: {
-             format: 'M/d/yy',
+             format: 'hh:mm (dd MMM yy)',
              gridlines: {count: 15}
            },
            vAxis: {
-             gridlines: {color: 'none'},
+             gridlines: {count: 10, color: 'grey'},
              minValue: 0
            }
          };

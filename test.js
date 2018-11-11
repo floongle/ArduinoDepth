@@ -163,6 +163,12 @@ function returnResults(response) {
 
 
 function writeDepthToDatabase(depthInCM) {
+
+  if (depthInCM > 120) {
+    logger.log('info', "Depth in CM is greater than 120cm. Not storing");
+    return;
+  }
+
   logger.log('info', "About to store a depth of [" + depthInCM + "]");
   MongoClient.connect(mongoURL, function(err, db) {
     if (err) throw err;
