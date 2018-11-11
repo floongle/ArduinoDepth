@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+
+
+
+     <script type="text/javascript">
+
+
+     google.charts.load('current', {packages:['corechart', 'line'] });
+     google.charts.setOnLoadCallback(drawChart);
+
+
+       function drawChart() {
+
+         var xmlhttp = new XMLHttpRequest();
+         xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              renderGraph(JSON.parse(this.responseText))
+            }
+
+         };
+         xmlhttp.open("GET", "result", true);
+         xmlhttp.send();
+
+
+       }
+
+       function renderGraph(newData) {
+         var data = new google.visualization.DataTable();
+
+         console.log("DATA is " + JSON.stringify(newData));
+
+         var myNewData = [];
+         for(var i = 0; i < newData.length; i++) {
+                var date = new Date(newData[i].datestamp);
+                var depth = parseInt(newData[i].depth);
+                myNewData.push([new Date(date), depth]);
+         }
+         console.log("NewDATA is " + JSON.stringify(myNewData));
+
+
+
+
+
+         data.addColumn('date', "Date");
+         data.addColumn("number", "Depth");
+
+         data.addRows(myNewData);
+
+         var options = {
+           title: 'Rate the Day on a Scale of 1 to 10',
+           width: 900,
+           height: 500,
+           hAxis: {
+             format: 'M/d/yy',
+             gridlines: {count: 15}
+           },
+           vAxis: {
+             gridlines: {color: 'none'},
+             minValue: 0
+           }
+         };
+
+         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+         chart.draw(data, options);
+       }
+
+
+
+
+
+     </script>
+
+
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+ <div id="curve_chart" style="width: 900px; height: 500px"></div>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
