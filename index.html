@@ -28,10 +28,10 @@
 
 
      google.charts.load('current', {packages:['corechart', 'line'] });
-     google.charts.setOnLoadCallback(drawChart);
+     google.charts.setOnLoadCallback(getTheData);
 
 
-       function drawChart() {
+       function getTheData() {
 
          var xmlhttp = new XMLHttpRequest();
          xmlhttp.onreadystatechange = function() {
@@ -85,6 +85,12 @@
          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
          chart.draw(data, options);
+
+         window.setInterval(myTimer, 5000);
+       }
+
+       function myTimer() {
+         getTheData();
        }
 
 
