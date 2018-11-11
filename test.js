@@ -173,7 +173,8 @@ function writeDepthToDatabase(depthInCM) {
   MongoClient.connect(mongoURL, function(err, db) {
     if (err) throw err;
     var dbo = db.db("mydb");
-    var myobj = { datestamp: Date.now(), depth: depthInCM };
+    var theDate = new Date();
+    var myobj = { datestamp: theDate.toUTCString(), depth: depthInCM };
     dbo.collection("depthValues").insertOne(myobj, function(err, res) {
       if (err) throw err;
       logger.log("info", "1 document inserted into database.");

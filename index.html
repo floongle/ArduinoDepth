@@ -74,12 +74,19 @@
            height: '60%',
            curveType: "function",
            hAxis: {
-             format: 'hh:mm (dd MMM yy)',
+             format: 'HH:mm (dd MMM yy)',
              gridlines: {count: 15}
            },
            vAxis: {
              gridlines: {count: 10, color: 'grey'},
              minValue: 0
+           },
+           legend: {
+             position: "in"
+           },
+           pointSize: 6,
+           series: {
+             0 : { pointShape : "circle" }
            }
          };
 
