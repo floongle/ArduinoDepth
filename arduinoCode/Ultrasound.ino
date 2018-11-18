@@ -11,10 +11,7 @@ ESP8266WiFiMulti WiFiMulti;
 /*
 HC-SR04 Ping distance sensor]
 VCC to arduino 5v GND to arduino GND
-Echo to Arduino pin 13 Trig to Arduino pin 12
-Red POS to Arduino pin 11
-Green POS to Arduino pin 10
-560 ohm resistor to both LED NEG and GRD power rail
+
 More info at: http://goo.gl/kJ8Gl
 Original code improvements to the Ping sketch sourced from Trollmaker.com
 Some code and wiring inspired by http://en.wikiversity.org/wiki/User:Dstaub/robotcar
@@ -22,16 +19,13 @@ Some code and wiring inspired by http://en.wikiversity.org/wiki/User:Dstaub/robo
 
 #define trigPin 2
 #define echoPin 0
-#define resetPin 5
 
 
 void setup() {
-  digitalWrite(resetPin, HIGH);
-  
+
   USE_SERIAL.begin(115200);
 
   pinMode(trigPin, OUTPUT);
-  pinMode(resetPin, OUTPUT); 
   pinMode(echoPin, INPUT);
 
   for (uint8_t t = 4; t > 0; t--) {
@@ -41,6 +35,7 @@ void setup() {
   }
 
   WiFi.mode(WIFI_STA);
+  WiFi.setSleepMode(WIFI_LIGHT_SLEEP);
   WiFiMulti.addAP("automagical", "like it was meant to be");
 
 }
@@ -88,13 +83,8 @@ void loop() {
 
     http.end();
   }
-
-  delay(10000);
-
-  Serial.println("resetting");
-  delay(10);
-  digitalWrite(resetPin, LOW);
-  Serial.println("this never happens");
+ 
+  delay(60000);
 
 
 
